@@ -1,5 +1,5 @@
 import { fetchUser } from './fetchUserSaga';
-import { takeLatest } from 'react-redux/effects';
+import { takeLatest } from 'redux-saga/effects';
 
 export default function*() {
   yield takeLatest('ADD_TODO', fetchUser);

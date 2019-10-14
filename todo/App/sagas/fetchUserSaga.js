@@ -14,8 +14,8 @@ const fetchUserApi = delay =>
 export function* fetchUser() {
   try {
     const response = yield call(fetchUserApi, 1000);
-    yield put({ type: FETCH_USER_SUCCESS, payload: response });
+    yield put({ type: 'FETCH_USER_SUCCESS', payload: response });
   } catch (err) {
-    yield put({ type: CANCEL_FETCHING_USER });
+    yield put({ type: 'CANCEL_FETCHING_USER' });
   }
 }
