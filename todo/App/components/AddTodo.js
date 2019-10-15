@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, TextInput, Button} from 'react-native';
 import {addTodo} from '../actions/index';
-import {connect} from 'react-redux';
 class AddTodo extends React.Component {
   constructor(props) {
     super(props);
@@ -32,4 +31,4 @@ class AddTodo extends React.Component {
     );
   }
 }
-export default connect()(AddTodo);
+export default AddTodo;

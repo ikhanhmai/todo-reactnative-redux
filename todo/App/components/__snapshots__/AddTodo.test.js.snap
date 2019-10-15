@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo Rendering should match to snapshot 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="type to add todo"
+    rejectResponderTermination={true}
+    underlineColorAndroid="transparent"
+  />
+  <Button
+    onPress={[Function]}
+    title="Add Todo"
+  />
+</View>
+`;

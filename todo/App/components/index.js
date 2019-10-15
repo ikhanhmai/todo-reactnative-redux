@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Button} from 'react-native';
 import ListItems from './ListItems';
-import AddTodo from './AddTodo';
+import AddTodoContainer from './AddTodoContainer';
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +18,7 @@ export default class Main extends React.Component {
           title="Go to Setting"
           onPress={() => navigate('Setting', {})}
           />
-        <AddTodo />
+        <AddTodoContainer />
         <ListItems />
       </View>
     );
