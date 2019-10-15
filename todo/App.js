@@ -7,16 +7,17 @@
  */
 
 import React from 'react';
-import Main from './App/components/index';
+import AppNavigator from './App/navigators/AppNavigator'
 import {View, StyleSheet} from 'react-native';
 import {Provider} from 'react-redux';
 import store from './App/store';
+
 class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
         <View style={style.view}>
-          <Main />
+          <AppNavigator />
         </View>
       </Provider>
     );
