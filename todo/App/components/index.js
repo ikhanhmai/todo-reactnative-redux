@@ -11,7 +11,6 @@ export default class Main extends React.Component {
     return (
       <View
         style={{
-          paddingTop: 100,
           flex: 1,
         }}>
           <Button

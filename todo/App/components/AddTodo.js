@@ -8,7 +8,6 @@ class AddTodo extends React.Component {
       text: '',
     };
   }
-
   onChangeTextHandler = text => {
     this.setState({
       text: text,
@@ -16,7 +15,10 @@ class AddTodo extends React.Component {
   };
 
   addTodoHandler = () => {
-    this.props.dispatch(addTodo(this.state.text));
+    if(this.state.text){
+      this.props.dispatch(addTodo(this.state.text));
+      this.setState({text:''});
+    }
   };
 
   render() {
@@ -25,6 +27,7 @@ class AddTodo extends React.Component {
         <TextInput
           placeholder="type to add todo"
           onChangeText={this.onChangeTextHandler}
+          value={this.state.text}
         />
         <Button title={'Add Todo'} onPress={this.addTodoHandler} />
       </View>
